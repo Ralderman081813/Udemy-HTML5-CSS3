@@ -1,0 +1,111 @@
+/* * and html style rules should be added to projects by default, 
+and edited/changed as needed. Good boilerplate to follow. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+/* ------------------------- REUSABLE ---------------------- */
+.row {
+    margin:  0 auto;
+    max-width: 1040px;
+}
+/* ------------------------- HEADER/HEADINGS ---------------------- */
+header .logo {
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+    width: auto;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    font-size: 90%;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom 0.3s;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/resources/imgs/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-text-box {
+    left: 15%;
+    position: absolute;
+    text-align: left;
+    top: 350px;
+    width: 1040px;
+}
+h1 {
+    color: #fff;
+    font-size: 240%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-transform: uppercase;
+    word-spacing: 4px;
+}
+/* ------------------------- BUTTONS ---------------------- */
+.button:link,
+.button:visited {  
+    border-radius: 200px;
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.full-btn:link,
+.full-btn:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 20px;
+}
+.ghost-btn:link,
+.ghost-btn:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.button:hover,
+.button:active {
+    background-color: #a15512;
+    border: 1px solid #a15512;
+    color: #fff;
+}
+.full-btn:hover,
+.full-btn:active {
+    border: 1px solid #a15512;
+}
+.ghost-btn:hover,
+.ghost-btn:active {
+    border: 1px solid #a15512;
+    color: #fff;
+}
+/* -------------------------  ---------------------- */
