@@ -1,0 +1,157 @@
+/* * and html style rules should be added to projects by default, 
+and edited/changed as needed. Good boilerplate to follow. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+/* ------------------------- REUSABLE ---------------------- */
+.row {
+    margin:  0 auto;
+    max-width: 1040px;
+}
+section {
+    padding: 80px 0;
+}
+.box {
+    padding: 1%;
+}
+/* ------------------------- HEADER/HEADINGS ---------------------- */
+header .logo {
+    float: left;
+    height: 100px;
+    margin-top: 20px;
+    width: auto;
+}
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.main-nav li a:link,
+.main-nav li a:visited {
+    border-bottom: 2px solid transparent;
+    color: #fff;
+    font-size: 90%;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #e67e22;
+    transition: border-bottom 0.3s;
+}
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.hero-text-box {
+    left: 15%;
+    position: absolute;
+    text-align: left;
+    top: 350px;
+    width: 1040px;
+}
+h1, h2, h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1 {
+    color: #fff;
+    font-size: 240%;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    word-spacing: 4px;
+}
+h2 {
+    font-size: 180%;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    text-align: center;
+    word-spacing: 2px;
+}
+h2:after {
+    background-color: #e67e22;
+    content: " ";
+    display: block;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 100px;
+
+}
+h3 {
+    font-size: 100%;
+    margin-bottom: 15px;
+}
+/* ------------------------- BUTTONS ---------------------- */
+.button:link,
+.button:visited {  
+    border-radius: 200px;
+    display: inline-block;
+    font-weight: 300;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+.full-btn:link,
+.full-btn:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: #fff;
+    margin-right: 20px;
+}
+.ghost-btn:link,
+.ghost-btn:visited {
+    border: 1px solid #e67e22;
+    color: #e67e22;
+}
+.button:hover,
+.button:active {
+    background-color: #a15512;
+    border: 1px solid #a15512;
+    color: #fff;
+}
+.full-btn:hover,
+.full-btn:active {
+    border: 1px solid #a15512;
+}
+.ghost-btn:hover,
+.ghost-btn:active {
+    border: 1px solid #a15512;
+    color: #fff;
+}
+/* ------------------------- ICONS ---------------------- */
+.icon-big {
+    color: #e67e22;
+    display: block;
+    font-size: 350%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+/* ------------------------- PARAGRAPHS ---------------------- */
+.long-copy {
+    line-height: 145%;
+    margin: 0 auto;
+    width: 70%;
+}
+.box p {
+    font-size: 90%;
+    line-height: 140%;
+}
