@@ -151,7 +151,40 @@ h3 {
     margin: 0 auto;
     width: 70%;
 }
+.features-section .long-copy {
+    margin-bottom: 30px;
+}
 .box p {
     font-size: 90%;
     line-height: 140%;
+}
+/* ------------------------- MEALS IMAGES ---------------------- */
+.meals-section {
+    padding: 0;   
+}
+.meals {
+    list-style: none;
+    width: 100%;
+}
+.meals li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+.meal-img {
+    background-color: #000;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.meal-img img {
+    height: auto;
+    opacity: 0.7;
+    transform: scale(1.15); /* 115% */
+    transition: transform 0.5s, opacity 0.5s; 
+    width: 100%;
+}
+.meal-img img:hover {
+    opacity: 1; /* 100% */
+    transform: scale(1.03); /* 100% */
 }
