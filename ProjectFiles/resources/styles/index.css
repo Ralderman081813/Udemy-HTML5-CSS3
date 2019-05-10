@@ -125,7 +125,8 @@ h3 {
 }
 /* ------------------------- BUTTONS ---------------------- */
 .button:link,
-.button:visited {  
+.button:visited,
+input[type=submit] {  
     border-radius: 200px;
     display: inline-block;
     font-weight: 300;
@@ -134,7 +135,8 @@ h3 {
     transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 .full-btn:link,
-.full-btn:visited {
+.full-btn:visited,
+input[type=submit] {
     background-color: #e67e22;
     border: 1px solid #e67e22;
     color: #fff;
@@ -146,13 +148,16 @@ h3 {
     color: #e67e22;
 }
 .button:hover,
-.button:active {
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #a15512;
     border: 1px solid #a15512;
     color: #fff;
 }
 .full-btn:hover,
-.full-btn:active {
+.full-btn:active,
+input[type=submit] {
     border: 1px solid #a15512;
 }
 .ghost-btn:hover,
@@ -352,4 +357,89 @@ cite img {
 }
 .meal-price {
     font-size: 80%;
+}
+/* ------------------------- CONTACT ---------------------- */
+.contact-form {
+    margin: 0 auto;
+    width: 60%;
+}
+input[type=text],
+input[type=email],
+select, 
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 7px;
+    width: 100%;
+}
+textarea {
+    height: 100px;
+}
+input[type=checkbox] {
+    margin: 10 5px 10px 0; 
+}
+*:focus {outline: none;} /* Takes out the default outlining on focus elements */
+/* ------------------------- FOOTER ---------------------- */
+footer {
+    background-color: #333;
+    font-size: 80%;
+    padding: 40px;
+}
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+.social-links {
+    list-style: none;
+    float: right;
+}
+.footer-nav li, 
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child, 
+.social-links li:last-child {
+    display: inline-block;
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    border: 0;
+    color: #888;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 150%
+}
+.ion-social-facebook,
+.ion-social-twitter,
+footer .ion-social-instagram,
+.ion-social-googleplus {
+    transition: color 0.2s;
+}
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+footer .ion-social-twitter:hover {
+    color: #55acee;
+}
+.ion-social-instagram:hover {
+    color: #fbad50;
+}
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+footer p {
+    color: #888;
+    margin-top: 20px;
+    text-align: center;
 }
