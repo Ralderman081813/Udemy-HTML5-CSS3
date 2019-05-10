@@ -77,6 +77,7 @@ header .logo {
     transition: border-bottom 0.3s;
 }
 header {
+    background-attachment: fixed;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
     background-position: center;
     background-size: cover;
@@ -274,4 +275,81 @@ h3 {
 }
 .city-info {
     margin-bottom: 5px;
+}
+/* ------------------------- TESTIMONIALS ---------------------- */
+.testimonials-section {
+    background-attachment: fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/ProjectFiles/resources/imgs/back-customers.jpg);
+    background-size: cover;
+    color: #fff;
+}
+blockquote:before {
+    content: "\201C";
+    display: block;
+    font-size: 500%;
+    left: -5px;
+    position: absolute; /* Parent element now requires position: relative; */
+    top: -5px;
+}
+blockquote {
+    font-style: italic;
+    line-height: 145%;
+    margin-top: 40px;    
+    padding: 2%;
+    position: relative;
+}
+cite {
+    display: block;
+    font-size: 90%;
+    margin-top: 25px;
+}
+cite img {
+    border-radius: 50%;
+    height: 45px;
+    margin: 10px;
+    vertical-align: middle;
+}
+/* ------------------------- PLANS ---------------------- */
+.plans-section {
+    background-color: #f4f4f4; 
+}
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px #c4c4c4; /* x-axis offset, y-axis offset, bue, and color */
+    margin-left: 5%;
+    width: 90%;
+}
+.plan-box div {
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px;
+}
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.plan-box div:last-child {
+    text-align: center;
+    border: none;
+}
+.plan-box ul {
+    list-style: none;
+}
+.plan-box ul li {
+    padding: 5px 0;
+    font-size: 95%;
+}
+.price {
+    color: #e67e22;
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+.meal-price {
+    font-size: 80%;
 }
