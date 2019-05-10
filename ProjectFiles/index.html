@@ -14,9 +14,9 @@
                 <div class="row">
                     <img src="resources/imgs/logo-white.png" class="logo" alt="Omnifood Logo">
                     <ul class="main-nav">
-                        <li><a href="#">Food delivery</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Our cities</a></li>
+                        <li><a href="#plans-section">Food delivery</a></li>
+                        <li><a href="#how-it-works-section">How it works</a></li>
+                        <li><a href="#cities-section">Our cities</a></li>
                         <li><a href="#">Sign up</a></li>
                         
                     </ul>
@@ -24,8 +24,8 @@
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br>Hello super healthy meals!</h1>
-                <a class="button full-btn" href="#">I'm hungry</a>
-                <a class="button ghost-btn" href="#">Show me more</a>
+                <a class="button full-btn" href="#plans-section">I'm hungry</a>
+                <a class="button ghost-btn" href="#how-it-works-section">Show me more</a>
             </div>
         </header>
         <!-- Features --> 
@@ -115,7 +115,7 @@
             </ul>
         </section>
         <!-- How It Works --> 
-        <section class="how-it-works-section">
+        <section class="how-it-works-section" id="how-it-works-section">
             <div class="row">
                 <h2>How it works &mdash; Simple as 1, 2, 3</h2>
             </div>
@@ -146,7 +146,7 @@
                 </div>
             </div>
         </section>
-        <section class="cities-section">
+        <section class="cities-section" id="cities-section">
             <div class="row">
                 <h2>We're currently in these cities</h2>
             </div>
@@ -217,7 +217,7 @@
                 </div>
             </div>
         </section>
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="testimonials-section">
             <div class="row">
                 <h2>Our customers can't live without us</h2>
             </div>
@@ -251,7 +251,7 @@
                 </div>
             </div>
         </section>
-        <section class="plans-section">
+        <section class="plans-section" id="plans-section">
             <div class="row">
                 <h2>Start eating healthy today</h2>
             </div>
@@ -353,9 +353,111 @@
                 </div>
             </div>
         </section>
+        <section class="contact-section" id="contact-section">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="find-us">How did you hear about us?</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <select name="find-us" id="find-us">
+                                <option value="friend">&mdash; Select &mdash;</option>
+                                <option value="friend">Friend</option>
+                                <option value="commercial">commercial</option>
+                                <option value="social">Social Media</option>
+                                <option value="ad">Advertisement</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="newsletter">Newsletter</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="checkbox" name="newsletter" id="newsletter" checked> <span>Yes, subscribe me to the newsletter!</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="message">Drop us a line</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea name="message" id="message" placeholder="Write us here"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Press</a>
+                        </li>
+                        <li>
+                            <a href="#">iOS App</a>
+                        </li>
+                        <li>
+                            <a href="#">Android App</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" aria-label="Facebook link"><i class="ion-social-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Twitter link"><i class="ion-social-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Instagram link"><i class="ion-social-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Google+ link"><i class="ion-social-googleplus"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <p>Developed by: Reissa Alderman for Omnifood&trade;  &copy; 2019</p>
+            </div>
+        </footer>
     </body>
 </html>
-
-<!--
-
--->
