@@ -1,0 +1,118 @@
+/* X-small devices 0 to 480px. */
+@media only screen and (max-width: 480px) {
+    section {
+        padding: 25px 0;
+    }
+    .contact-form {
+        width: 100%;
+    }
+}
+/* Small devices 481px to 767px. */
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row,
+    .hero-text-box {
+        left: 10px;
+        padding: 0 4%;
+    }
+    div.col,
+    div.col:first-child {
+        margin: 1% 0 1% 1.6%;
+        width: 100%;
+    }
+    .main-nav {
+        display: none;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+    .long-copy {
+        margin-left: 0%;
+        width: 100%;
+    }
+    .how-it-works-box:first-child {
+        text-align: center;
+    }
+    .steps div {
+        font-size: 120%;
+        height: 40px;
+        margin-right: 15px;
+        padding: 4px;
+        width: 40px;
+    }
+    .steps {
+        margin-bottom: 20px;
+    }
+    .steps:last-of-type {
+        margin-bottom: 20px;
+    }
+    img.app-screen {
+        width: 30%;
+    }
+}
+/* Medium devices 768px to 1023px. */
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .long-copy {
+        margin-left: 10%;
+        width: 80%;
+    }
+    .how-it-works-box {
+        margin-top: 10px;
+    }
+    .how-it-works-box:last-child {
+        margin-top: 10px;
+    }
+    .steps {
+        margin-bottom: 40px;
+    }
+    .steps:last-of-type {
+        margin-bottom: 60px;
+    }
+    .app-screen {
+        width: 50%;
+    }
+    .icon-small {
+        margin-right: 4px;
+        width: 16px;
+    }
+    .city-info {
+        font-size: 90%;
+    }
+    .plan-box {
+        margin-left: 0;
+        width: 100%;
+    }
+    .price {
+        font-size: 225%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+    .footer-nav li {
+        margin: 5px;
+    }
+}
+/* Large screens of 1024px or larger. */
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        padding: 0 2%;
+        width: 100%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+}
