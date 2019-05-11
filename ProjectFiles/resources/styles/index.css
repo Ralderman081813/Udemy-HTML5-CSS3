@@ -1,16 +1,19 @@
 /* * and html style rules should be added to projects by default, 
 and edited/changed as needed. Good boilerplate to follow. */
 * {
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-size: 20px;
     font-weight: 300;
+    overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
 /* ------------------------- REUSABLE ---------------------- */
@@ -39,6 +42,7 @@ a:visited {
     color: #e67e22;
     padding-bottom: 1px;
     text-decoration: none;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 a:hover,
@@ -74,10 +78,12 @@ header .logo {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 header {
     background-attachment: fixed;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../imgs/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/hero.jpg);
     background-position: center;
     background-size: cover;
@@ -132,6 +138,7 @@ input[type=submit] {
     font-weight: 300;
     padding: 10px 20px;
     text-decoration: none;
+    -webkit-transition: background-color 0.3s, border 0.3s, color 0.3s;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
 }
 .full-btn:link,
@@ -219,12 +226,17 @@ input[type=submit] {
 .meal-img img {
     height: auto;
     opacity: 0.7;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15); /* 115% */
-    transition: transform 0.5s, opacity 0.5s; 
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; 
     width: 100%;
 }
 .meal-img img:hover {
     opacity: 1; /* 100% */
+    -webkit-transform: scale(1.03);
     transform: scale(1.03); /* 100% */
 }
 /* ------------------------- HOW IT WORKS ---------------------- */
@@ -278,13 +290,17 @@ input[type=submit] {
     margin-bottom: 15px;
     width: 100%;
 }
+.cities-section h3 {
+    font-weight: 600;
+}
 .city-info {
     margin-bottom: 5px;
 }
 /* ------------------------- TESTIMONIALS ---------------------- */
 .testimonials-section {
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/ProjectFiles/resources/imgs/back-customers.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(../imgs/back-customers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../imgs/back-customers.jpg);
     background-size: cover;
     color: #fff;
 }
@@ -321,6 +337,7 @@ cite img {
 .plan-box {
     background-color: #fff;
     border-radius: 5px;
+    -webkit-box-shadow: 0 2px 2px #c4c4c4;
     box-shadow: 0 2px 2px #c4c4c4; /* x-axis offset, y-axis offset, bue, and color */
     margin-left: 5%;
     width: 90%;
@@ -410,6 +427,7 @@ footer {
     border: 0;
     color: #888;
     text-decoration: none;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 .footer-nav li a:hover,
@@ -424,6 +442,7 @@ footer {
 .ion-social-twitter,
 footer .ion-social-instagram,
 .ion-social-googleplus {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 .ion-social-facebook:hover {
