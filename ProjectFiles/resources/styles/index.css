@@ -72,6 +72,7 @@ a:active {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 9999;
 }
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
