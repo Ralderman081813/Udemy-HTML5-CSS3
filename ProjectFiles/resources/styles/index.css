@@ -16,6 +16,10 @@ body {
     overflow-x: hidden;
     text-rendering: optimizeLegibility;
 }
+/* Smooth scrolling for the page. Native for smooth scrolling. */
+html {
+  scroll-behavior: smooth;
+}
 /* ------------------------- REUSABLE ---------------------- */
 .row {
     margin:  0 auto;
@@ -64,30 +68,6 @@ a:active {
     margin: 5px 0;
     width: auto;
 }
-/* Sticky nav */
-.sticky {
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #efefef;
-    left: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 9999;
-}
-.sticky .main-nav li a:link,
-.sticky .main-nav li a:visited {
-    color: #555;
-    padding: 16px 0;
-}
-.sticky .logo {
-    display: none;
-}
-.sticky .logo-black {
-    display: block;
-}
-.sticky .main-nav {
-    margin-top: 18px;
-}
 /* Default nav */
 .main-nav {
     float: right;
@@ -113,6 +93,42 @@ a:active {
     -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
+/* Sticky nav */
+.sticky {
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    padding: 16px 0;
+}
+.sticky .logo {
+    display: none;
+}
+.sticky .logo-black {
+    display: block;
+}
+.sticky .main-nav {
+    margin-top: 18px;
+}
+/* Mobile nav */
+.mobile-nav-icon {
+    cursor: pointer;
+    display: none;
+    float: right;
+    margin-top: 30px;
+}
+.mobile-nav-icon i {
+    color: #fff;
+    font-size: 200%;
+}
+/* ------------------------- HEADER/BANNER ---------------------- */
 header {
     background-attachment: fixed;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../imgs/hero.jpg);
@@ -223,7 +239,7 @@ input[type=submit] {
     vertical-align: middle; /* Align text & icons in row. */
     width: 30px;
 }
-/* ------------------------- PARAGRAPHS ---------------------- */
+/* ------------------------- FEATURES ---------------------- */
 .long-copy {
     line-height: 145%;
     margin: 0 auto;
@@ -235,6 +251,23 @@ input[type=submit] {
 .box p {
     font-size: 90%;
     line-height: 140%;
+}
+/* Animations */
+.animation-1,
+.animation-2,
+.animation-3 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    opacity: 0;
+}
+.animation-4 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.animation-1.animated,
+.animation-2.animated,
+.animation-3.animated {
+    opacity: 1;
 }
 /* ------------------------- MEALS IMAGES ---------------------- */
 .meals-section {

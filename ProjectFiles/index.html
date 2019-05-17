@@ -4,11 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Omnifood</title>
-        <link rel="stylesheet" type="text/css" href="resources/styles/index.css">
         <link rel="stylesheet" type="text/css" href="resources/styles/mediaQueries.css">
         <link rel="stylesheet" type="text/css" href="externalResources/styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="externalResources/styles/grid.css">
+        <link rel="stylesheet" type="text/css" href="externalResources/styles/animate.css">
         <link rel="stylesheet" type="text/css" href="externalResources/styles/ionicons.min.css">
+        <link rel="stylesheet" type="text/css" href="resources/styles/index.css">
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
     </head>
     <body>
@@ -19,29 +20,31 @@
                     <img src="resources/imgs/logo-white.png" class="logo" alt="Omnifood Logo">
                     <img src="resources/imgs/logo.png" class="logo-black" alt="Omnifood Logo">
                     <ul class="main-nav">
-                        <li><a href="#plans-section">Food delivery</a></li>
+                        <li><a href="#features-section">Food delivery</a></li>
                         <li><a href="#how-it-works-section">How it works</a></li>
                         <li><a href="#cities-section">Our cities</a></li>
-                        <li><a href="#">Sign up</a></li>
-                        
+                        <li><a href="#plans-section">Sign up</a></li>
                     </ul>
+                    <a class="mobile-nav-icon" alt="Mobile Navigation Icon">
+                        <i class="ion-navicon-round"></i>
+                    </a>
                 </div>
             </nav>
             <div class="hero-text-box">
                 <h1>Goodbye junk food.<br>Hello super healthy meals!</h1>
-                <a class="button full-btn" href="#plans-section">I'm hungry</a>
-                <a class="button ghost-btn" href="#how-it-works-section">Show me more</a>
+                <a class="button full-btn js-scroll-plans" href="#">I'm hungry</a>
+                <a class="button ghost-btn js-scroll-features" href="#">Show me more</a>
             </div>
         </header>
         <!-- Features --> 
-        <section class="features-section features--js">
+        <section class="features-section" id="features-section">
             <div class="row">
                 <h2>Get food fast &mdash; not fast food.</h2>
                 <p class="long-copy">
                     Hello, we’re Omnifood, your new premium food delivery service. We know you’re always busy. No time for cooking. So let us take care of that, we’re really good at it, we promise!
                 </p>
             </div>
-            <div class="row">
+            <div class="row animation-1">
                 <div class="col span-1-of-4 box">
                     <i class="ion-ios-infinite-outline icon-big"></i>
                     <h3>Up to 365 days/year</h3>
@@ -126,7 +129,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-2 how-it-works-box">
-                    <img src="resources/imgs/app-iPhone.png" alt="Omnifood iPhone app" class="app-screen">
+                    <img src="resources/imgs/app-iPhone.png" alt="Omnifood iPhone app" class="app-screen animation-2">
                 </div>
                 <div class="col span-1-of-2 how-it-works">
                     <div class="steps">
@@ -156,7 +159,7 @@
                 <h2>We're currently in these cities</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box animation-3">
                     <img src="resources/imgs/lisbon-3.jpg" alt="Lisbon">
                     <h3>Lisbon</h3>
                     <div class="city-info">
@@ -172,7 +175,7 @@
                         <a href="#">@omnifood_lx</a>
                     </div>
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box animation-3">
                     <img src="resources/imgs/san-francisco.jpg" alt="San Francisco">
                     <h3>San Francisco</h3>
                     <div class="city-info">
@@ -188,7 +191,7 @@
                         <a href="#">@omnifood_sf</a>
                     </div>
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box animation-3">
                     <img src="resources/imgs/berlin.jpg" alt="Berlin">
                     <h3>Berlin</h3>
                     <div class="city-info">
@@ -204,7 +207,7 @@
                         <a href="#">@omnifood_berlin</a>
                     </div>
                 </div>
-                <div class="col span-1-of-4 box">
+                <div class="col span-1-of-4 box animation-3">
                     <img src="resources/imgs/london.jpg" alt="London">
                     <h3>London</h3>
                     <div class="city-info">
@@ -262,7 +265,7 @@
             </div>
             <div class="row">
                 <div class="col span-1-of-3">
-                    <div class="plan-box">
+                    <div class="plan-box animation-4">
                         <div>
                             <h3>Premium</h3>
                             <p class="price">$399<span>/month</span></p>
