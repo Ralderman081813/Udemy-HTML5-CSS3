@@ -25,8 +25,22 @@
         margin: 1% 0 1% 1.6%;
         width: 100%;
     }
-    .main-nav {
+    /*.main-nav {
         display: none;
+    }*/
+    .main-nav { 
+        float: left;
+    }
+    .main-nav li {
+       display: block; 
+    }
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        border: 0;
+        display: block;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
     }
     h1 {
         font-size: 180%;
