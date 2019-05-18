@@ -38,4 +38,17 @@ $(document).ready(function() {
     }, {
         offset: "50%"
     });
+    /* Mobile nav */
+    $(".js--mobile-nav-icon").click(function() {
+        var nav = $(".js--main-nav");
+        var icon = $(".js--mobile-nav-icon i");
+        nav.slideToggle(200); // 200: Time it will take for the open/close effect.
+        if (icon.hasClass("ion-navicon-round")) {
+            icon.addClass("ion-close-round");
+            icon.removeClass("ion-navicon-round");
+        } else {
+            icon.addClass("ion-navicon-round");
+            icon.removeClass("ion-close-round");
+        };
+    });
 });
