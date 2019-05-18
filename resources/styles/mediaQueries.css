@@ -20,27 +20,53 @@
         left: 10px;
         padding: 0 4%;
     }
+    div.hero-text-box {
+        width: 80%;
+    }
+    div.hero-text-box h1 {
+        font-size: 175%;
+    }
     div.col,
     div.col:first-child {
         margin: 1% 0 1% 1.6%;
         width: 100%;
     }
-    /*.main-nav {
+    .main-nav {
         display: none;
-    }*/
-    .main-nav { 
-        float: left;
-    }
-    .main-nav li {
-       display: block; 
-    }
-    .main-nav li a:link,
-    .main-nav li a:visited {
-        border: 0;
-        display: block;
     }
     .mobile-nav-icon {
         display: inline-block;
+    }
+    ul.main-nav { 
+        float: left;
+        margin-left: 25px;
+        margin-top: 35px;
+    }
+    ul.main-nav li {
+        display: block;
+    }
+    ul.main-nav li a:link,
+    ul.main-nav li a:visited {
+        border: 0;
+        display: block;
+        font-size: 100%;
+        padding: 10px 0;
+    }
+    nav .mobile-nav-icon {
+        display: inline-block;
+    }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0;
+    }
+    .sticky ul.main-nav {
+        margin-top: 10px;
+    }
+    .sticky .mobile-nav-icon {
+        margin-top: 10px;
+    }
+    .sticky .mobile-nav-icon i {
+        color: #555;
     }
     h1 {
         font-size: 180%;
@@ -52,7 +78,7 @@
         margin-left: 0%;
         width: 100%;
     }
-    .how-it-works-box:first-child {
+    div.how-it-works-box:first-child {
         text-align: center;
     }
     .steps div {
@@ -68,7 +94,7 @@
     .steps:last-of-type {
         margin-bottom: 20px;
     }
-    img.app-screen {
+    .how-it-works-box .app-screen {
         width: 30%;
     }
 }
@@ -83,6 +109,12 @@
     .long-copy {
         margin-left: 10%;
         width: 80%;
+    }
+    div.hero-text-box {
+        width: 80%;
+    }
+    .hero-text-box h1 {
+        font-size: 200%;
     }
     .how-it-works-box {
         margin-top: 10px;
